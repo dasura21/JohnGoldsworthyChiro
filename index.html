@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John C. Goldsworthy, DC, CCSP | Chicago Chiropractor</title>
+    <meta name="description" content="Dr. John C. Goldsworthy provides expert chiropractic care, sports medicine, and physical therapy in Chicago, IL. Established in 1980. On-site X-rays.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            600: '#0284c7', // Professional Medical Blue
+                            700: '#0369a1',
+                            900: '#0c4a6e',
+                        },
+                        secondary: {
+                            500: '#0f766e', // Teal accent for health/healing
+                            600: '#0d9488',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-pattern {
+            background-image: linear-gradient(rgba(12, 74, 110, 0.85), rgba(12, 74, 110, 0.85)), url('https://images.unsplash.com/photo-1576091160550-2173ff9e5ee5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-gray-50">
+
+    <!-- Top Bar -->
+    <div class="bg-primary-900 text-white py-2 px-4 text-sm hidden md:block">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex space-x-6">
+                <span><i class="fa-solid fa-location-dot mr-2 text-secondary-500"></i> 6128 N Northwest Hwy, Chicago, IL 60631</span>
+                <span><i class="fa-solid fa-phone mr-2 text-secondary-500"></i> 773-774-5535</span>
+                <span><i class="fa-solid fa-clock mr-2 text-secondary-500"></i> Flexible Scheduling</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="font-semibold text-secondary-500"><i class="fa-solid fa-shield-halved mr-1"></i> In-Network: Blue Cross Blue Shield</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="#" class="flex flex-col">
+                        <span class="font-serif font-bold text-2xl text-primary-900 tracking-tight">John C. Goldsworthy</span>
+                        <span class="text-sm font-medium text-secondary-600 tracking-wider">DC & CCSP</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-primary-600 font-medium transition-colors">Meet the Doctor</a>
+                    <a href="#services" class="text-gray-600 hover:text-primary-600 font-medium transition-colors">Services</a>
+                    <a href="#technology" class="text-gray-600 hover:text-primary-600 font-medium transition-colors">On-Site X-Ray</a>
+                    <a href="#contact" class="text-gray-600 hover:text-primary-600 font-medium transition-colors">Contact</a>
+                    <a href="#contact" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2.5 rounded-full font-semibold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        Book Appointment
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-primary-900 focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 pt-2 pb-4 space-y-1 shadow-inner">
+            <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md">Meet the Doctor</a>
+            <a href="#services" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md">Services</a>
+            <a href="#technology" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md">On-Site X-Ray</a>
+            <a href="#contact" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md">Contact</a>
+            <div class="pt-2">
+                <span class="block px-3 py-2 text-sm text-secondary-600 font-bold"><i class="fa-solid fa-check-circle mr-1"></i> BCBS Accepted</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-pattern relative py-24 md:py-32 lg:py-40 flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center md:text-left">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center px-4 py-2 rounded-full bg-secondary-500/20 border border-secondary-500/30 text-secondary-50 text-sm font-semibold mb-6 backdrop-blur-sm">
+                    <i class="fa-solid fa-award mr-2"></i> Serving Chicago Since 1980
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-6">
+                    Decades of Experience.<br>
+                    <span class="text-secondary-500">Flexible Care Tailored to You.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto md:mx-0 leading-relaxed">
+                    Led by Dr. John C. Goldsworthy, a Certified Chiropractic Sports Physician, our clinic provides comprehensive, individualized treatments to relieve pain, restore mobility, and enhance your athletic performance.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#contact" class="bg-primary-600 hover:bg-primary-500 text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg text-center">
+                        Schedule a Consultation
+                    </a>
+                    <a href="#services" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-full font-bold text-lg transition-all backdrop-blur-sm text-center">
+                        Explore Our Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Banner -->
+    <div class="bg-white shadow-xl relative z-20 -mt-10 mx-4 md:mx-auto max-w-6xl rounded-2xl overflow-hidden">
+        <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-100">
+            <div class="p-8 flex items-start space-x-4">
+                <div class="bg-primary-50 p-3 rounded-lg text-primary-600">
+                    <i class="fa-solid fa-user-doctor text-2xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 text-lg">Expert Care</h3>
+                    <p class="text-gray-500 text-sm mt-1">40+ years of dedicated practice & CCSP Certified.</p>
+                </div>
+            </div>
+            <div class="p-8 flex items-start space-x-4">
+                <div class="bg-primary-50 p-3 rounded-lg text-primary-600">
+                    <i class="fa-solid fa-x-ray text-2xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 text-lg">On-Site X-Rays</h3>
+                    <p class="text-gray-500 text-sm mt-1">Immediate diagnostics for accurate, tailored treatments.</p>
+                </div>
+            </div>
+            <div class="p-8 flex items-start space-x-4">
+                <div class="bg-primary-50 p-3 rounded-lg text-primary-600">
+                    <i class="fa-solid fa-file-medical text-2xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-900 text-lg">Insurance Friendly</h3>
+                    <p class="text-gray-500 text-sm mt-1">Proudly accepting Blue Cross Blue Shield.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 md:py-28 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-1/2 relative">
+                    <div class="absolute -inset-4 bg-secondary-500/10 rounded-3xl transform -rotate-3"></div>
+                    <img src="John Cover Photo.jpg" alt="Dr. John C. Goldsworthy" class="relative rounded-2xl shadow-xl w-full object-cover h-[500px]">
+                    <div class="absolute bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl max-w-xs hidden md:block">
+                        <div class="flex items-center gap-4">
+                            <div class="text-secondary-500 text-4xl">
+                                <i class="fa-solid fa-certificate"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-gray-900">CCSP</p>
+                                <p class="text-xs text-gray-500 leading-tight">Certified Chiropractic Sports Physician</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <h2 class="text-secondary-600 font-semibold tracking-wide uppercase text-sm mb-2">Meet Your Doctor</h2>
+                    <h3 class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-6">Dr. John C. Goldsworthy</h3>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Since establishing his practice in 1980, Dr. Goldsworthy has been a pillar of health and wellness in the Chicago community. With over four decades of clinical experience, he understands that no two bodies are alike. <strong>His approach is highly flexible</strong>, taking the time to listen to your concerns and adapting treatments to fit your specific lifestyle, pain levels, and recovery goals.
+                    </p>
+                    
+                    <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm mb-8">
+                        <h4 class="font-bold text-gray-900 mb-4 border-b border-gray-100 pb-2">Education & Credentials</h4>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-graduation-cap text-primary-600 mt-1 mr-3 w-5"></i>
+                                <div>
+                                    <span class="block font-semibold text-gray-800">Doctor of Chiropractic Medicine</span>
+                                    <span class="block text-sm text-gray-500">National University of Health Sciences</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-university text-primary-600 mt-1 mr-3 w-5"></i>
+                                <div>
+                                    <span class="block font-semibold text-gray-800">Bachelor of Biological Sciences</span>
+                                    <span class="block text-sm text-gray-500">Southern Illinois University</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-medal text-primary-600 mt-1 mr-3 w-5"></i>
+                                <div>
+                                    <span class="block font-semibold text-gray-800">CCSP Designation</span>
+                                    <span class="block text-sm text-gray-500">Certified Chiropractic Sports Physician</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 md:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-secondary-600 font-semibold tracking-wide uppercase text-sm mb-2">Comprehensive Care</h2>
+                <h3 class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-6">Expertise Across All Modalities</h3>
+                <p class="text-gray-600">We treat a vast array of conditions, from everyday back and neck pain to complex sports injuries. Our clinic focuses on modern, evidence-based chiropractic adjustments and rehabilitation.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover:bg-white hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-100 group">
+                    <div class="w-16 h-16 bg-primary-100 text-primary-600 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-primary-600 group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-bone"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">General Chiropractic Care</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Expert diagnosis and flexible treatment plans for a wide variety of conditions, including sciatica, migraines, neck stiffness, and chronic back pain. We adapt our techniques (from gentle mobilization to standard adjustments) to suit your comfort level.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover:bg-white hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-100 group">
+                    <div class="w-16 h-16 bg-secondary-100 text-secondary-600 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-secondary-600 group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-person-running"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Sports Chiropractic (CCSP)</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        As a Certified Chiropractic Sports Physician, Dr. Goldsworthy specializes in the assessment, management, and rehabilitation of sports-related injuries. Perfect for athletes looking to optimize biomechanics and speed up recovery times.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover:bg-white hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-100 group">
+                    <div class="w-16 h-16 bg-primary-100 text-primary-600 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-primary-600 group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-person-walking-with-cane"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Physical Therapy & Rehab</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Beyond the adjustment, we provide comprehensive physical therapy rehabilitation. By strengthening supporting muscles and improving flexibility, we address the root cause of your pain to prevent future injuries.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- X-Ray Differentiator Section -->
+    <section id="technology" class="py-20 bg-primary-900 text-white overflow-hidden relative">
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 32px 32px;"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-secondary-400 font-semibold tracking-wide uppercase text-sm mb-2">Advanced Diagnostics</h2>
+                    <h3 class="text-3xl md:text-4xl font-serif font-bold mb-6">State-of-the-Art On-Site X-Ray</h3>
+                    <p class="text-gray-300 text-lg mb-6 leading-relaxed">
+                        Why wait days for imaging results or travel to a secondary facility? We separate ourselves from standard clinics by offering complete, professional X-ray imaging right here in our office.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center text-gray-200">
+                            <i class="fa-solid fa-circle-check text-secondary-500 mr-3"></i> Immediate answers regarding bone health and alignment.
+                        </li>
+                        <li class="flex items-center text-gray-200">
+                            <i class="fa-solid fa-circle-check text-secondary-500 mr-3"></i> Safer, more precise adjustments based on real imaging.
+                        </li>
+                        <li class="flex items-center text-gray-200">
+                            <i class="fa-solid fa-circle-check text-secondary-500 mr-3"></i> Highly convenient—saving you time and extra appointments.
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:w-5/12 flex justify-center">
+                    <div class="w-48 h-48 md:w-64 md:h-64 rounded-full border-8 border-primary-700 bg-primary-800 flex items-center justify-center shadow-2xl relative">
+                        <div class="absolute inset-0 rounded-full border-4 border-dashed border-secondary-500/50 animate-[spin_10s_linear_infinite]"></div>
+                        <i class="fa-solid fa-x-ray text-7xl md:text-9xl text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Location -->
+    <section id="contact" class="py-20 md:py-28 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+                <div class="flex flex-col lg:flex-row">
+                    <!-- Contact Info -->
+                    <div class="lg:w-1/3 bg-primary-900 text-white p-10 md:p-12">
+                        <h3 class="text-3xl font-serif font-bold mb-8">Visit Our Clinic</h3>
+                        
+                        <div class="space-y-8">
+                            <div class="flex items-start">
+                                <i class="fa-solid fa-location-dot mt-1 text-secondary-500 text-xl w-8"></i>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-1">Location</h4>
+                                    <p class="text-gray-300">6128 N Northwest Hwy<br>Chicago, IL 60631</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fa-solid fa-phone mt-1 text-secondary-500 text-xl w-8"></i>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-1">Phone</h4>
+                                    <p class="text-gray-300 text-xl font-medium">773-774-5535</p>
+                                    <button onclick="copyToClipboard('773-774-5535')" class="mt-2 text-sm bg-white/10 hover:bg-white/20 px-4 py-2 rounded transition-colors flex items-center">
+                                        <i class="fa-solid fa-copy mr-2"></i> Copy Number
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <i class="fa-solid fa-clock mt-1 text-secondary-500 text-xl w-8"></i>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-1">Hours</h4>
+                                    <p class="text-gray-300 text-sm">We pride ourselves on being <strong>flexible</strong> with our patients. Please call for current availability and to schedule a time that works for you.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-8 pt-8 border-t border-white/20">
+                                <div class="bg-white rounded-lg p-4 flex items-center justify-center gap-3">
+                                    <i class="fa-solid fa-shield-heart text-blue-600 text-2xl"></i>
+                                    <span class="text-gray-900 font-bold text-sm">We Accept Blue Cross Blue Shield</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Map/Image Area -->
+                    <div class="lg:w-2/3 bg-gray-200 relative min-h-[400px]">
+                        <!-- Using the clinic exterior image, wrapped in a link to google maps -->
+                        <a href="https://maps.google.com/?q=6128+N+Northwest+Hwy,+Chicago,+IL+60631" target="_blank" rel="noopener noreferrer" class="absolute inset-0 block group overflow-hidden">
+                            <img src="Chiropractor Practice.jpg" alt="Norwood Chiropractic Clinic Exterior at 6128 N Northwest Hwy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-primary-900/40 group-hover:bg-primary-900/20 transition-colors duration-300"></div>
+                            
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="bg-white p-4 rounded-xl shadow-2xl transform group-hover:-translate-y-2 transition-transform duration-300 text-center border-b-4 border-primary-600">
+                                    <div class="text-primary-600 text-3xl mb-2"><i class="fa-solid fa-map-location-dot"></i></div>
+                                    <div class="font-bold text-gray-900">Get Directions</div>
+                                    <div class="text-sm text-gray-500">Opens in Google Maps</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <div class="font-serif font-bold text-xl text-white mb-2">John C. Goldsworthy, DC, CCSP</div>
+                <p class="text-sm">Excellence in Chiropractic & Sports Medicine since 1980.</p>
+            </div>
+            <div class="flex gap-6">
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#services" class="hover:text-white transition-colors">Services</a>
+                <a href="#technology" class="hover:text-white transition-colors">X-Ray</a>
+            </div>
+            <div class="text-sm text-center md:text-right">
+                &copy; <span id="year"></span> Dr. John C. Goldsworthy. All rights reserved.<br>
+                Chicago, IL.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Set dynamic year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Custom copy to clipboard implementation (no alerts per constraints)
+        function copyToClipboard(text) {
+            // Create a temporary input to select text from
+            const tempInput = document.createElement("input");
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            
+            // Create a custom floating toast notification instead of alert()
+            const toast = document.createElement('div');
+            toast.textContent = "Phone number copied!";
+            toast.className = "fixed bottom-5 right-5 bg-green-600 text-white px-6 py-3 rounded shadow-lg transition-opacity duration-300 z-50 font-medium";
+            document.body.appendChild(toast);
+            
+            // Fade out and remove
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                setTimeout(() => document.body.removeChild(toast), 300);
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
