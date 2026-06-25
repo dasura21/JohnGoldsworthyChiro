@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John C. Goldsworthy, DC, CCSP | Chicago Chiropractor</title>
-    <meta name="description" content="Dr. John C. Goldsworthy provides expert chiropractic care, sports medicine, and physical therapy in Chicago, IL. Established in 1980. On-site X-rays.">
+    <!-- Updated Title to reflect active Doctor of Chiropractic status -->
+    <title>John C. Goldsworthy, DC | Chicago Chiropractor</title>
+    <meta name="description" content="Dr. John C. Goldsworthy provides expert chiropractic care, sports medicine focus, and physical therapy in Chicago, IL. Established in 1980. On-site X-rays.">
     
+    <!-- Loading Tailwind CSS, Google Fonts, and FontAwesome Icons -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -67,7 +69,8 @@
                 <div class="flex items-center">
                     <a href="#" class="flex flex-col">
                         <span class="font-serif font-bold text-2xl text-primary-900 tracking-tight">John C. Goldsworthy</span>
-                        <span class="text-sm font-medium text-secondary-600 tracking-wider">DC & CCSP</span>
+                        <!-- Updated subtitle to highlight his DC degree and specialized focus safely -->
+                        <span class="text-sm font-medium text-secondary-600 tracking-wider">Doctor of Chiropractic | Sports & Rehab Specialist</span>
                     </a>
                 </div>
                 
@@ -114,15 +117,16 @@
                     Decades of Experience.<br>
                     <span class="text-secondary-500">Flexible Care Tailored to You.</span>
                 </h1>
+                <!-- Language adjusted to reflect first-person "my clinic", highlights sports medicine training safely -->
                 <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto md:mx-0 leading-relaxed">
-                    Led by Dr. John C. Goldsworthy, a Certified Chiropractic Sports Physician, our clinic provides comprehensive, individualized treatments to relieve pain, restore mobility, and enhance your athletic performance.
+                    Led by Dr. John C. Goldsworthy, DC—with extensive post-graduate training in sports chiropractic—my clinic provides comprehensive, individualized treatments to relieve pain, restore mobility, and enhance your athletic performance.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                     <a href="#contact" class="bg-primary-600 hover:bg-primary-500 text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg text-center">
                         Schedule a Consultation
                     </a>
                     <a href="#services" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-full font-bold text-lg transition-all backdrop-blur-sm text-center">
-                        Explore Our Services
+                        Explore My Services
                     </a>
                 </div>
             </div>
@@ -138,7 +142,8 @@
                 </div>
                 <div>
                     <h3 class="font-bold text-gray-900 text-lg">Expert Care</h3>
-                    <p class="text-gray-500 text-sm mt-1">40+ years of dedicated practice & CCSP Certified.</p>
+                    <!-- Wording changed to focus on sports medicine training/focus rather than active designation -->
+                    <p class="text-gray-500 text-sm mt-1">40+ years of dedicated practice with specialized sports medicine focus.</p>
                 </div>
             </div>
             <div class="p-8 flex items-start space-x-4">
@@ -166,28 +171,40 @@
     <section id="about" class="py-20 md:py-28 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col lg:flex-row gap-16 items-center">
-                <div class="lg:w-1/2 relative">
+                
+                <!-- Doctor Image Container (Zoomed Out Layout via padding & object-contain) -->
+                <div class="lg:w-1/2 relative flex justify-center w-full">
                     <div class="absolute -inset-4 bg-secondary-500/10 rounded-3xl transform -rotate-3"></div>
-                    <img src="John Cover Photo.jpg" alt="Dr. John C. Goldsworthy" class="relative rounded-2xl shadow-xl w-full object-cover h-[500px]">
-                    <div class="absolute bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl max-w-xs hidden md:block">
+                    
+                    <!-- We wrap the image in a padded frame with white background so the full portrait size is shown (zoomed out look) -->
+                    <div class="relative overflow-hidden rounded-2xl bg-white shadow-xl border border-gray-100 p-4 w-full h-[500px] flex items-center justify-center">
+                        <img src="John Cover Photo.jpg" 
+                             alt="Dr. John C. Goldsworthy" 
+                             class="rounded-xl max-w-full max-h-full object-contain"
+                             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1594824813573-246434de83fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';">
+                    </div>
+                    
+                    <!-- Adjusted CCSP reference section to represent training/expertise legacy cleanly -->
+                    <div class="absolute bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl max-w-xs hidden md:block border border-gray-100">
                         <div class="flex items-center gap-4">
                             <div class="text-secondary-500 text-4xl">
-                                <i class="fa-solid fa-certificate"></i>
+                                <i class="fa-solid fa-graduation-cap"></i>
                             </div>
                             <div>
-                                <p class="font-bold text-gray-900">CCSP</p>
-                                <p class="text-xs text-gray-500 leading-tight">Certified Chiropractic Sports Physician</p>
+                                <p class="font-bold text-gray-900">Sports Focus</p>
+                                <p class="text-xs text-gray-500 leading-tight">Completed CCSP Post-Graduate Training</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 
+                <!-- Doctor Profile Text Block (Rewritten fully in first person: "I", "my") -->
                 <div class="lg:w-1/2">
                     <h2 class="text-secondary-600 font-semibold tracking-wide uppercase text-sm mb-2">Meet Your Doctor</h2>
                     <h3 class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-6">Dr. John C. Goldsworthy</h3>
                     
                     <p class="text-gray-600 mb-6 leading-relaxed">
-                        Since establishing his practice in 1980, Dr. Goldsworthy has been a pillar of health and wellness in the Chicago community. With over four decades of clinical experience, he understands that no two bodies are alike. <strong>His approach is highly flexible</strong>, taking the time to listen to your concerns and adapting treatments to fit your specific lifestyle, pain levels, and recovery goals.
+                        Since establishing my practice in 1980, I have been a pillar of health and wellness in the Chicago community. With over four decades of clinical experience, I understand that no two bodies are alike. <strong>My approach is highly flexible</strong>—I take the time to listen to your concerns and adapt treatments to fit your specific lifestyle, pain levels, and recovery goals.
                     </p>
                     
                     <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm mb-8">
@@ -210,8 +227,9 @@
                             <li class="flex items-start">
                                 <i class="fa-solid fa-medal text-primary-600 mt-1 mr-3 w-5"></i>
                                 <div>
-                                    <span class="block font-semibold text-gray-800">CCSP Designation</span>
-                                    <span class="block text-sm text-gray-500">Certified Chiropractic Sports Physician</span>
+                                    <!-- Safely framing CCSP as extensive sports training and coursework completed -->
+                                    <span class="block font-semibold text-gray-800">Sports Medicine Specialization</span>
+                                    <span class="block text-sm text-gray-500">Completed Certified Chiropractic Sports Physician (CCSP) Coursework</span>
                                 </div>
                             </li>
                         </ul>
@@ -227,40 +245,45 @@
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="text-secondary-600 font-semibold tracking-wide uppercase text-sm mb-2">Comprehensive Care</h2>
                 <h3 class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-6">Expertise Across All Modalities</h3>
-                <p class="text-gray-600">We treat a vast array of conditions, from everyday back and neck pain to complex sports injuries. Our clinic focuses on modern, evidence-based chiropractic adjustments and rehabilitation.</p>
+                <!-- First-person update: "I treat...", "My clinic..." -->
+                <p class="text-gray-600">I treat a vast array of conditions, from everyday back and neck pain to complex sports injuries. My clinic focuses on modern, evidence-based chiropractic adjustments and rehabilitation.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Service 1 -->
+                <!-- Service 1: General Chiropractic -->
                 <div class="bg-gray-50 rounded-2xl p-8 hover:bg-white hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-100 group">
                     <div class="w-16 h-16 bg-primary-100 text-primary-600 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-primary-600 group-hover:text-white transition-colors duration-300">
                         <i class="fa-solid fa-bone"></i>
                     </div>
                     <h4 class="text-xl font-bold text-gray-900 mb-3">General Chiropractic Care</h4>
+                    <!-- First person updates: "I adapt my techniques" -->
                     <p class="text-gray-600 text-sm leading-relaxed mb-4">
-                        Expert diagnosis and flexible treatment plans for a wide variety of conditions, including sciatica, migraines, neck stiffness, and chronic back pain. We adapt our techniques (from gentle mobilization to standard adjustments) to suit your comfort level.
+                        Expert diagnosis and flexible treatment plans for a wide variety of conditions, including sciatica, migraines, neck stiffness, and chronic back pain. I adapt my techniques (from gentle mobilization to standard adjustments) to suit your comfort level.
                     </p>
                 </div>
 
-                <!-- Service 2 -->
+                <!-- Service 2: Sports Chiropractic Focus -->
                 <div class="bg-gray-50 rounded-2xl p-8 hover:bg-white hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-100 group">
                     <div class="w-16 h-16 bg-secondary-100 text-secondary-600 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-secondary-600 group-hover:text-white transition-colors duration-300">
                         <i class="fa-solid fa-person-running"></i>
                     </div>
-                    <h4 class="text-xl font-bold text-gray-900 mb-3">Sports Chiropractic (CCSP)</h4>
+                    <!-- Reframed CCSP as Sports Chiropractic Focus -->
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Sports Chiropractic Focus</h4>
+                    <!-- First person and CCSP training highlighted safely -->
                     <p class="text-gray-600 text-sm leading-relaxed mb-4">
-                        As a Certified Chiropractic Sports Physician, Dr. Goldsworthy specializes in the assessment, management, and rehabilitation of sports-related injuries. Perfect for athletes looking to optimize biomechanics and speed up recovery times.
+                        Drawing on specialized post-graduate training as a Chiropractic Sports Physician, I specialize in the assessment, management, and rehabilitation of sports-related injuries. Perfect for athletes looking to optimize biomechanics and speed up recovery times.
                     </p>
                 </div>
 
-                <!-- Service 3 -->
+                <!-- Service 3: Physical Therapy -->
                 <div class="bg-gray-50 rounded-2xl p-8 hover:bg-white hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-100 group">
                     <div class="w-16 h-16 bg-primary-100 text-primary-600 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-primary-600 group-hover:text-white transition-colors duration-300">
                         <i class="fa-solid fa-person-walking-with-cane"></i>
                     </div>
                     <h4 class="text-xl font-bold text-gray-900 mb-3">Physical Therapy & Rehab</h4>
+                    <!-- First-person translation: "I provide", "I address" -->
                     <p class="text-gray-600 text-sm leading-relaxed mb-4">
-                        Beyond the adjustment, we provide comprehensive physical therapy rehabilitation. By strengthening supporting muscles and improving flexibility, we address the root cause of your pain to prevent future injuries.
+                        Beyond the adjustment, I provide comprehensive physical therapy rehabilitation. By strengthening supporting muscles and improving flexibility, I address the root cause of your pain to prevent future injuries.
                     </p>
                 </div>
             </div>
@@ -273,11 +296,13 @@
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                <!-- Content Column -->
                 <div class="md:w-1/2">
                     <h2 class="text-secondary-400 font-semibold tracking-wide uppercase text-sm mb-2">Advanced Diagnostics</h2>
                     <h3 class="text-3xl md:text-4xl font-serif font-bold mb-6">State-of-the-Art On-Site X-Ray</h3>
+                    <!-- First-person translation: "I separate myself", "my office" -->
                     <p class="text-gray-300 text-lg mb-6 leading-relaxed">
-                        Why wait days for imaging results or travel to a secondary facility? We separate ourselves from standard clinics by offering complete, professional X-ray imaging right here in our office.
+                        Why wait days for imaging results or travel to a secondary facility? I separate myself from standard clinics by offering complete, professional X-ray imaging right here in my office.
                     </p>
                     <ul class="space-y-4">
                         <li class="flex items-center text-gray-200">
@@ -291,6 +316,7 @@
                         </li>
                     </ul>
                 </div>
+                <!-- Graphic Column -->
                 <div class="md:w-5/12 flex justify-center">
                     <div class="w-48 h-48 md:w-64 md:h-64 rounded-full border-8 border-primary-700 bg-primary-800 flex items-center justify-center shadow-2xl relative">
                         <div class="absolute inset-0 rounded-full border-4 border-dashed border-secondary-500/50 animate-[spin_10s_linear_infinite]"></div>
@@ -306,9 +332,10 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
                 <div class="flex flex-col lg:flex-row">
-                    <!-- Contact Info -->
+                    <!-- Contact Info Block -->
                     <div class="lg:w-1/3 bg-primary-900 text-white p-10 md:p-12">
-                        <h3 class="text-3xl font-serif font-bold mb-8">Visit Our Clinic</h3>
+                        <!-- First-person translation: "Visit My Clinic" -->
+                        <h3 class="text-3xl font-serif font-bold mb-8">Visit My Clinic</h3>
                         
                         <div class="space-y-8">
                             <div class="flex items-start">
@@ -334,14 +361,16 @@
                                 <i class="fa-solid fa-clock mt-1 text-secondary-500 text-xl w-8"></i>
                                 <div>
                                     <h4 class="font-bold text-lg mb-1">Hours</h4>
-                                    <p class="text-gray-300 text-sm">We pride ourselves on being <strong>flexible</strong> with our patients. Please call for current availability and to schedule a time that works for you.</p>
+                                    <!-- First-person translation: "I pride myself", "my patients" -->
+                                    <p class="text-gray-300 text-sm">I pride myself on being <strong>flexible</strong> with my patients. Please call for current availability and to schedule a time that works for you.</p>
                                 </div>
                             </div>
                             
                             <div class="mt-8 pt-8 border-t border-white/20">
+                                <!-- Neutral phrasing to represent insurance in a clean, standard manner -->
                                 <div class="bg-white rounded-lg p-4 flex items-center justify-center gap-3">
                                     <i class="fa-solid fa-shield-heart text-blue-600 text-2xl"></i>
-                                    <span class="text-gray-900 font-bold text-sm">We Accept Blue Cross Blue Shield</span>
+                                    <span class="text-gray-900 font-bold text-sm">Blue Cross Blue Shield Accepted</span>
                                 </div>
                             </div>
                         </div>
@@ -351,7 +380,7 @@
                     <div class="lg:w-2/3 bg-gray-200 relative min-h-[400px]">
                         <!-- Using the clinic exterior image, wrapped in a link to google maps -->
                         <a href="https://maps.google.com/?q=6128+N+Northwest+Hwy,+Chicago,+IL+60631" target="_blank" rel="noopener noreferrer" class="absolute inset-0 block group overflow-hidden">
-                            <img src="Chiropractor Practice.jpg" alt="Norwood Chiropractic Clinic Exterior at 6128 N Northwest Hwy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <img src="Chiropractor Practice.jpg" alt="Norwood Chiropractic Clinic Exterior at 6128 N Northwest Hwy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80';">
                             <div class="absolute inset-0 bg-primary-900/40 group-hover:bg-primary-900/20 transition-colors duration-300"></div>
                             
                             <div class="absolute inset-0 flex items-center justify-center">
@@ -372,8 +401,9 @@
     <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="text-center md:text-left">
-                <div class="font-serif font-bold text-xl text-white mb-2">John C. Goldsworthy, DC, CCSP</div>
-                <p class="text-sm">Excellence in Chiropractic & Sports Medicine since 1980.</p>
+                <!-- Cleaned up active doctor designation -->
+                <div class="font-serif font-bold text-xl text-white mb-2">John C. Goldsworthy, DC</div>
+                <p class="text-sm">Excellence in Chiropractic & Sports Injury focus since 1980.</p>
             </div>
             <div class="flex gap-6">
                 <a href="#about" class="hover:text-white transition-colors">About</a>
@@ -408,7 +438,7 @@
             });
         });
 
-        // Custom copy to clipboard implementation (no alerts per constraints)
+        // Custom copy to clipboard implementation (using safe custom UI toast notifications instead of alert)
         function copyToClipboard(text) {
             // Create a temporary input to select text from
             const tempInput = document.createElement("input");
@@ -427,7 +457,11 @@
             // Fade out and remove
             setTimeout(() => {
                 toast.style.opacity = '0';
-                setTimeout(() => document.body.removeChild(toast), 300);
+                setTimeout(() => {
+                    if (toast.parentNode) {
+                        document.body.removeChild(toast);
+                    }
+                }, 300);
             }, 3000);
         }
     </script>
