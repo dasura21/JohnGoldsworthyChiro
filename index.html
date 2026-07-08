@@ -53,11 +53,11 @@
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div class="flex space-x-6">
                 <span><i class="fa-solid fa-location-dot mr-2 text-secondary-500"></i> 6128 N Northwest Hwy, Chicago, IL 60631</span>
-                <span><i class="fa-solid fa-phone mr-2 text-secondary-500"></i> 773-774-5535</span>
+                <span><a href="tel:7737745535" class="hover:text-secondary-400 transition-colors"><i class="fa-solid fa-phone mr-2 text-secondary-500"></i> 773-774-5535</a></span>
                 <span><i class="fa-solid fa-clock mr-2 text-secondary-500"></i> Flexible Scheduling</span>
             </div>
             <div class="flex items-center space-x-4">
-                <span class="font-semibold text-secondary-500"><i class="fa-solid fa-shield-halved mr-1"></i> In-Network: Blue Cross Blue Shield</span>
+                <span class="font-semibold text-secondary-500"><i class="fa-solid fa-shield-halved mr-1"></i> In-Network: BCBS PPO</span>
             </div>
         </div>
     </div>
@@ -80,8 +80,8 @@
                     <a href="#services" class="text-gray-600 hover:text-primary-600 font-medium transition-colors">Services</a>
                     <a href="#technology" class="text-gray-600 hover:text-primary-600 font-medium transition-colors">On-Site X-Ray</a>
                     <a href="#contact" class="text-gray-600 hover:text-primary-600 font-medium transition-colors">Contact</a>
-                    <a href="#contact" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2.5 rounded-full font-semibold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
-                        Book Appointment
+                    <a href="tel:7737745535" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2.5 rounded-full font-semibold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 flex items-center">
+                        <i class="fa-solid fa-phone mr-2"></i> By Appointment
                     </a>
                 </div>
 
@@ -101,7 +101,7 @@
             <a href="#technology" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md">On-Site X-Ray</a>
             <a href="#contact" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md">Contact</a>
             <div class="pt-2">
-                <span class="block px-3 py-2 text-sm text-secondary-600 font-bold"><i class="fa-solid fa-check-circle mr-1"></i> BCBS Accepted</span>
+                <span class="block px-3 py-2 text-sm text-secondary-600 font-bold"><i class="fa-solid fa-check-circle mr-1"></i> BCBS PPO Accepted</span>
             </div>
         </div>
     </nav>
@@ -122,8 +122,8 @@
                     Led by Dr. John C. Goldsworthy DC—with extensive post-graduate training in sports chiropractic—my clinic provides comprehensive, individualized treatments to relieve pain, restore mobility, and enhance your athletic performance.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                    <a href="#contact" class="bg-primary-600 hover:bg-primary-500 text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg text-center">
-                        Schedule a Consultation
+                    <a href="tel:7737745535" class="bg-primary-600 hover:bg-primary-500 text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-lg text-center flex items-center justify-center">
+                        <i class="fa-solid fa-phone mr-2"></i> By Appointment: 773-774-5535
                     </a>
                     <a href="#services" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-full font-bold text-lg transition-all backdrop-blur-sm text-center">
                         Explore My Services
@@ -161,7 +161,7 @@
                 </div>
                 <div>
                     <h3 class="font-bold text-gray-900 text-lg">Insurance Friendly</h3>
-                    <p class="text-gray-500 text-sm mt-1">Proudly accepting Blue Cross Blue Shield.</p>
+                    <p class="text-gray-500 text-sm mt-1">Proudly accepting BCBS PPO.</p>
                 </div>
             </div>
         </div>
@@ -172,15 +172,14 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col lg:flex-row gap-16 items-center">
                 
-                <!-- Doctor Image Container (Even more zoomed out layout via heavy padding & object-contain) -->
+                <!-- Doctor Image Container (Restored to natural crop for the new environmental photo) -->
                 <div class="lg:w-1/2 relative flex justify-center w-full">
                     <div class="absolute -inset-4 bg-secondary-500/10 rounded-3xl transform -rotate-3"></div>
                     
-                    <!-- INCREASED PADDING TO p-20 (from p-8) TO MAKE IT SIGNIFICANTLY MORE ZOOMED OUT -->
-                    <div class="relative overflow-hidden rounded-2xl bg-black shadow-xl border border-gray-900 p-20 w-full h-[500px] flex items-center justify-center">
-                        <img src="John Cover Photo.jpg" 
+                    <div class="relative overflow-hidden rounded-2xl shadow-xl w-full h-[500px]">
+                        <img src="IMG_1253.jpg" 
                              alt="Dr. John C. Goldsworthy" 
-                             class="rounded-xl max-w-full max-h-full object-contain"
+                             class="w-full h-full object-cover object-top"
                              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1594824813573-246434de83fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';">
                     </div>
                     
@@ -290,6 +289,27 @@
         </div>
     </section>
 
+    <!-- Clinic Gallery / Tour Section -->
+    <section class="py-16 bg-gray-50 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-secondary-600 font-semibold tracking-wide uppercase text-sm mb-2">Take a Look Inside</h2>
+                <h3 class="text-2xl md:text-3xl font-serif font-bold text-gray-900">A Comfortable, Traditional Healing Environment</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="rounded-xl overflow-hidden shadow-md h-64 border border-gray-200">
+                    <img src="IMG_1262.jpg" alt="Waiting Area" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-md h-64 border border-gray-200">
+                    <img src="IMG_1251.jpg" alt="Treatment Room" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-md h-64 border border-gray-200">
+                    <img src="IMG_1244.jpg" alt="Doctor's Office and Diplomas" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- X-Ray Section -->
     <section id="technology" class="py-20 bg-primary-900 text-white overflow-hidden relative">
         <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 32px 32px;"></div>
@@ -370,7 +390,7 @@
                                 <!-- Neutral phrasing to represent insurance in a clean, standard manner -->
                                 <div class="bg-white rounded-lg p-4 flex items-center justify-center gap-3">
                                     <i class="fa-solid fa-shield-heart text-blue-600 text-2xl"></i>
-                                    <span class="text-gray-900 font-bold text-sm">Blue Cross Blue Shield Accepted</span>
+                                    <span class="text-gray-900 font-bold text-sm">BCBS PPO Accepted</span>
                                 </div>
                             </div>
                         </div>
@@ -380,7 +400,7 @@
                     <div class="lg:w-2/3 bg-gray-200 relative min-h-[400px]">
                         <!-- Using the clinic exterior image, wrapped in a link to google maps -->
                         <a href="https://maps.google.com/?q=6128+N+Northwest+Hwy,+Chicago,+IL+60631" target="_blank" rel="noopener noreferrer" class="absolute inset-0 block group overflow-hidden">
-                            <img src="Chiropractor Practice.jpg" alt="Norwood Chiropractic Clinic Exterior at 6128 N Northwest Hwy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80';">
+                            <img src="IMG_1265.jpg" alt="Norwood Chiropractic Clinic Exterior at 6128 N Northwest Hwy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80';">
                             <div class="absolute inset-0 bg-primary-900/40 group-hover:bg-primary-900/20 transition-colors duration-300"></div>
                             
                             <div class="absolute inset-0 flex items-center justify-center">
