@@ -2,41 +2,19 @@
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' ; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://images.unsplash.com https://placehold.co; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; media-src 'self' blob:; worker-src 'self' blob:; object-src 'none'; base-uri 'none'; form-action 'none';">
+<meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Updated Title to reflect active Doctor of Chiropractic status -->
     <title>John C. Goldsworthy DC | Chicago Chiropractor </title>
     <meta name="description" content="Dr. John C. Goldsworthy provides expert chiropractic care, sports medicine focus, and physical therapy in Chicago, IL. Established in 1980. On-site X-rays.">
-    
+
     <!-- Loading Tailwind CSS, Google Fonts, and FontAwesome Icons -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/site.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['Merriweather', 'serif'],
-                    },
-                    colors: {
-                        primary: {
-                            50: '#f0f9ff',
-                            100: '#e0f2fe',
-                            600: '#0284c7', // Professional Medical Blue
-                            700: '#0369a1',
-                            900: '#0c4a6e',
-                        },
-                        secondary: {
-                            500: '#0f766e', // Teal accent for health/healing
-                            600: '#0d9488',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="./vendor/fontawesome/css/all.min.css">
+
+
     <style>
         .hero-pattern {
             background-image: linear-gradient(rgba(12, 74, 110, 0.85), rgba(12, 74, 110, 0.85)), url('https://images.unsplash.com/photo-1576091160550-2173ff9e5ee5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
@@ -183,7 +161,7 @@
                         <img src="IMG_1253.jpeg" 
                              alt="Dr. John C. Goldsworthy" 
                              class="w-full h-full object-cover object-bottom"
-                             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1594824813573-246434de83fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';">
+                             data-fallback-src="https://images.unsplash.com/photo-1594824813573-246434de83fb?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80">
                     </div>
                     
                     <!-- Adjusted CCSP reference section to represent training/expertise legacy cleanly -->
@@ -302,13 +280,13 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <!-- ALL UPDATED TO .jpeg with fallbacks -->
                 <div class="rounded-xl overflow-hidden shadow-md h-64 border border-gray-200 bg-gray-200">
-                    <img src="IMG_1262.jpeg" alt="Waiting Area" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='https://placehold.co/600x400/eeeeee/999999?text=Waiting+Area';">
+                    <img src="IMG_1262.jpeg" alt="Waiting Area" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-fallback-src="https://placehold.co/600x400/eeeeee/999999?text=Waiting+Area">
                 </div>
                 <div class="rounded-xl overflow-hidden shadow-md h-64 border border-gray-200 bg-gray-200">
-                    <img src="IMG_1251.jpeg" alt="Treatment Room" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='https://placehold.co/600x400/eeeeee/999999?text=Treatment+Room';">
+                    <img src="IMG_1251.jpeg" alt="Treatment Room" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-fallback-src="https://placehold.co/600x400/eeeeee/999999?text=Treatment+Room">
                 </div>
                 <div class="rounded-xl overflow-hidden shadow-md h-64 border border-gray-200 bg-gray-200">
-                    <img src="IMG_1244.jpeg" alt="Doctor's Office and Diplomas" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='https://placehold.co/600x400/eeeeee/999999?text=Diplomas';">
+                    <img src="IMG_1244.jpeg" alt="Doctor's Office and Diplomas" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-fallback-src="https://placehold.co/600x400/eeeeee/999999?text=Diplomas">
                 </div>
             </div>
         </div>
@@ -375,7 +353,7 @@
                                 <div>
                                     <h4 class="font-bold text-lg mb-1">Phone</h4>
                                     <p class="text-gray-300 text-xl font-medium">773-774-5535</p>
-                                    <button onclick="copyToClipboard('773-774-5535')" class="mt-2 text-sm bg-white/10 hover:bg-white/20 px-4 py-2 rounded transition-colors flex items-center">
+                                    <button data-copy-phone="773-774-5535" class="mt-2 text-sm bg-white/10 hover:bg-white/20 px-4 py-2 rounded transition-colors flex items-center">
                                         <i class="fa-solid fa-copy mr-2"></i> Copy Number
                                     </button>
                                 </div>
@@ -404,7 +382,7 @@
                     <div class="lg:w-2/3 bg-gray-200 relative min-h-[400px]">
                         <!-- UPDATED TO .jpeg -->
                         <a href="https://maps.google.com/?q=6128+N+Northwest+Hwy,+Chicago,+IL+60631" target="_blank" rel="noopener noreferrer" class="absolute inset-0 block group overflow-hidden">
-                            <img src="IMG_1265.jpeg" alt="Norwood Chiropractic Clinic Exterior at 6128 N Northwest Hwy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80';">
+                            <img src="IMG_1265.jpeg" alt="Norwood Chiropractic Clinic Exterior at 6128 N Northwest Hwy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-fallback-src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
                             <div class="absolute inset-0 bg-primary-900/40 group-hover:bg-primary-900/20 transition-colors duration-300"></div>
                             
                             <div class="absolute inset-0 flex items-center justify-center">
@@ -442,52 +420,6 @@
     </footer>
 
     <!-- Scripts -->
-    <script>
-        // Set dynamic year
-        document.getElementById('year').textContent = new Date().getFullYear();
-
-        // Mobile Menu Toggle
-        const btn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
-
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
-
-        // Close mobile menu when a link is clicked
-        const mobileLinks = menu.querySelectorAll('a');
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                menu.classList.add('hidden');
-            });
-        });
-
-        // Custom copy to clipboard implementation (using safe custom UI toast notifications instead of alert)
-        function copyToClipboard(text) {
-            // Create a temporary input to select text from
-            const tempInput = document.createElement("input");
-            tempInput.value = text;
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            document.execCommand("copy");
-            document.body.removeChild(tempInput);
-            
-            // Create a custom floating toast notification instead of alert()
-            const toast = document.createElement('div');
-            toast.textContent = "Phone number copied!";
-            toast.className = "fixed bottom-5 right-5 bg-green-600 text-white px-6 py-3 rounded shadow-lg transition-opacity duration-300 z-50 font-medium";
-            document.body.appendChild(toast);
-            
-            // Fade out and remove
-            setTimeout(() => {
-                toast.style.opacity = '0';
-                setTimeout(() => {
-                    if (toast.parentNode) {
-                        document.body.removeChild(toast);
-                    }
-                }, 300);
-            }, 3000);
-        }
-    </script>
+    <script src="./assets/home-0.js"></script>
 </body>
 </html>
